@@ -12,7 +12,7 @@ camera.position.z = 20;
 
 
 var model;
-var modelUrl = './animated-Anchor-Corrected.gltf';
+var modelUrl = './animated-gltf.gltf';
 
 var loader = new THREE.GLTFLoader();
 loader.load( modelUrl, function ( gltf ) {
@@ -54,8 +54,7 @@ window.addEventListener('mousemove', function(e) {
     let percX = window.innerWidth*0.5 - e.clientX;
   
     camera.position.x = percX / 100;
-
-    let percY = window.innerHeight*0.875 - e.clientY;
+    let percY = window.innerWidth*0.5 - e.clientY;
   
     camera.position.y = percY / 100;
   
@@ -66,10 +65,6 @@ window.addEventListener('touchmove', function(e) {
     let percX = window.innerWidth*0.5 - e.touches[0].pageX;
 
       camera.position.x = percX / 100;
-
-      let percY = window.innerHeight*0.875 - e.touches[0].pageY;
-
-      camera.position.y = percY / 100;
 
       camera.lookAt(new THREE.Vector3(0,0,0));
 });
