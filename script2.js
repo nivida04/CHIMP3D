@@ -21,7 +21,7 @@ loader.load( modelUrl, function ( gltf ) {
   mixer = new THREE.AnimationMixer( gltf.scene );
   clips = gltf.animations;
   model = gltf.scene;
-  model.scale.set(4,4,4);
+  model.scale.set(2,2,2);
   model.position.set(0,0,0);
   scene.add( model );
 
