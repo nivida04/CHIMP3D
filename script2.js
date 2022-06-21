@@ -12,7 +12,7 @@ camera.position.z = 20;
 
 
 var model;
-var modelUrl = './animated-GreenGlass.gltf';
+var modelUrl = './Chimp_Head.gltf';
 
 var loader = new THREE.GLTFLoader();
 loader.load( modelUrl, function ( gltf ) {
